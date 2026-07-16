@@ -6,15 +6,15 @@ const projectsData = {
       "Plateforme de location d'appartements entre particuliers, développée en React avec routage dynamique et galerie photo interactive.",
     images: [
       {
-        placeholder: 'Capture Kasa 1/3 — à ajouter',
+        src: './images/kasa-img-1.png',
         caption: "Page d'accueil : liste des logements avec filtres.",
       },
       {
-        placeholder: 'Capture Kasa 2/3 — à ajouter',
+        src: './images/kasa-img-2.png',
         caption: "Détail d'un logement avec galerie photo cyclique.",
       },
       {
-        placeholder: 'Capture Kasa 3/3 — à ajouter',
+        src: './images/kasa-img-3.png',
         caption: 'Version mobile, menu et mise en page adaptés.',
       },
     ],

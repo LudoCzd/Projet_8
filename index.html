@@ -7,8 +7,8 @@
   <meta name="description" content="Portfolio de Ludovic Cazade, développeur web et web mobile. Découvrez mes projets et compétences en développement web.">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script defer src="js/main.js"></script>
   <script defer src="js/data.js"></script>
+  <script defer src="js/main.js"></script> 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
    tailwind.config = {
@@ -322,6 +322,7 @@
       <p id="modal-description" class="text-sm text-white/70 mb-4"></p>
       <div class="relative rounded-lg overflow-hidden bg-bg border border-border h-56 flex items-center justify-center mb-3">
         <p id="modal-image-placeholder" class="text-white/40 text-sm px-6 text-center"></p>
+        <img id="modal-image" src="" alt="" class="hidden w-full h-full object-cover absolute inset-0" />
         <span id="modal-counter" class="absolute top-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded-full"></span>
         <button id="modal-prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white rounded-full w-8 h-8 flex items-center justify-center" aria-label="Image précédente">‹</button>
         <button id="modal-next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white rounded-full w-8 h-8 flex items-center justify-center" aria-label="Image suivante">›</button>

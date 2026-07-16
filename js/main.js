@@ -1,5 +1,15 @@
 const menuToggle = document.getElementById('menu-toggle');
 const menu = document.getElementById('menu');
+const modalTags = document.getElementById('modal-tags');
+const modalImage = document.getElementById('modal-image');
+const modalImagePlaceholder = document.getElementById(
+  'modal-image-placeholder',
+);
+const modalCaption = document.getElementById('modal-caption');
+const modalCounter = document.getElementById('modal-counter');
+
+let currentProject = null;
+let currentImageIndex = 0;
 
 menuToggle.addEventListener('click', () => {
   const menuHidden = menu.classList.toggle('hidden');
@@ -36,6 +46,14 @@ modalOpen.forEach((btn) => {
     modalTitle.textContent = project.title;
     modalDescription.textContent = project.description;
     modalGithub.href = project.github;
+    modalTags.innerHTML = '';
+    project.tags.forEach((tag) => {
+      const span = document.createElement('span');
+      span.className =
+        'px-3 py-1 rounded-full bg-bg border border-border text-xs text-white/70';
+      span.textContent = tag;
+      modalTags.appendChild(span);
+    });
 
     modal.classList.remove('hidden');
   });
