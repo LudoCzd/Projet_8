@@ -19,6 +19,13 @@ function updateImage() {
     modalImage.alt = img.caption;
     modalImage.classList.remove('hidden');
     modalImagePlaceholder.classList.add('hidden');
+    if (img.fit === 'contain') {
+      modalImage.classList.remove('object-cover');
+      modalImage.classList.add('object-contain');
+    } else {
+      modalImage.classList.remove('object-contain');
+      modalImage.classList.add('object-cover');
+    }
   } else {
     modalImagePlaceholder.textContent = img.placeholder;
     modalImagePlaceholder.classList.remove('hidden');
@@ -27,6 +34,21 @@ function updateImage() {
   modalCaption.textContent = img.caption;
   modalCounter.textContent = `${currentImageIndex + 1} / ${currentProject.images.length}`;
 }
+
+const modalPrev = document.getElementById('modal-prev');
+const modalNext = document.getElementById('modal-next');
+
+modalPrev.addEventListener('click', () => {
+  currentImageIndex =
+    (currentImageIndex - 1 + currentProject.images.length) %
+    currentProject.images.length;
+  updateImage();
+});
+
+modalNext.addEventListener('click', () => {
+  currentImageIndex = (currentImageIndex + 1) % currentProject.images.length;
+  updateImage();
+});
 
 menuToggle.addEventListener('click', () => {
   const menuHidden = menu.classList.toggle('hidden');

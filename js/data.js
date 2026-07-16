@@ -7,7 +7,7 @@ const projectsData = {
     images: [
       {
         src: './images/kasa-img-1.png',
-        caption: "Page d'accueil : liste des logements avec filtres.",
+        caption: "Page d'accueil : liste des logements.",
       },
       {
         src: './images/kasa-img-2.png',
@@ -15,7 +15,8 @@ const projectsData = {
       },
       {
         src: './images/kasa-img-3.png',
-        caption: 'Version mobile, menu et mise en page adaptés.',
+        caption: 'Version mobile, mise en page adaptée.',
+        fit: 'contain',
       },
     ],
     github: 'https://github.com/LudoCzd/Projet_5',
@@ -29,15 +30,15 @@ const projectsData = {
     images: [
       {
         src: './images/grimoire-img-1.png',
-        caption: "Page d'accueil : liste des livres avec filtres.",
+        caption: "Page d'accueil : liste des livres avec notes.",
       },
       {
         src: './images/grimoire-img-2.png',
-        caption: "Détail d'un livre avec notation et commentaires.",
+        caption: 'Détail de la base de données MongoDB.',
       },
       {
         src: './images/grimoire-img-3.png',
-        caption: "Détail d'un livre avec notation et commentaires.",
+        caption: "Requête POSTMAN d'authentification avec token.",
       },
     ],
     github: 'https://github.com/LudoCzd/Projet_6',
