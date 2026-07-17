@@ -30,7 +30,7 @@ const projectsData = {
     images: [
       {
         src: './images/grimoire-img-1.png',
-        caption: "Page d'accueil : liste des livres avec notes.",
+        caption: "Page d'accueil : Page d'accueil du front connecté à mon API.",
       },
       {
         src: './images/grimoire-img-2.png',
