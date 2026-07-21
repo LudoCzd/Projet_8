@@ -6,15 +6,15 @@ const projectsData = {
       "Plateforme de location d'appartements entre particuliers, développée en React avec routage dynamique et galerie photo interactive.",
     images: [
       {
-        src: './images/kasa-img-1.png',
+        src: './images/kasa-img-1.webp',
         caption: "Page d'accueil : liste des logements.",
       },
       {
-        src: './images/kasa-img-2.png',
+        src: './images/kasa-img-2.webp',
         caption: "Détail d'un logement avec galerie photo cyclique.",
       },
       {
-        src: './images/kasa-img-3.png',
+        src: './images/kasa-img-3.webp',
         caption: 'Version mobile, mise en page adaptée.',
         fit: 'contain',
       },
@@ -29,15 +29,15 @@ const projectsData = {
       'API sécurisée de notation de livres : authentification JWT, opérations CRUD complètes et modélisation MongoDB.',
     images: [
       {
-        src: './images/grimoire-img-1.png',
-        caption: "Page d'accueil : Page d'accueil du front connecté à mon API.",
+        src: './images/grimoire-img-1.webp',
+        caption: "Page d'accueil du front connecté à mon API.",
       },
       {
-        src: './images/grimoire-img-2.png',
+        src: './images/grimoire-img-2.webp',
         caption: 'Détail de la base de données MongoDB.',
       },
       {
-        src: './images/grimoire-img-3.png',
+        src: './images/grimoire-img-3.webp',
         caption: "Requête POSTMAN d'authentification avec token.",
       },
     ],

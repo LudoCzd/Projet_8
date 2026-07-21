@@ -143,6 +143,10 @@ const contactForm = document.getElementById('contact-form');
 
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
+  const honeypot = document.getElementById('contact-website');
+  if (honeypot.value !== '') {
+    return;
+  }
 
   emailjs
     .sendForm('service_4qonvk9', 'template_mli0e09', contactForm)
